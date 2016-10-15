@@ -1,0 +1,11 @@
+version: '2'
+services:
+
+  hubot:
+    environment:
+      - HUBOT_SLACK_TOKEN
+    build:
+      context: "."
+    container_name: hubot
+    volumes:
+      - ./hubot:/opt/hubot
